@@ -13,7 +13,7 @@ const App = ({Component, ...rest}) => {
         <Head>
           <meta content="ie=edge" httpEquiv="x-ua-compatible"/>
           <meta charSet="utf-8"/>
-          <meta name="viewport" content="width=device-width, initial-scale=0.2"/>
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
           <title>OOrmia - Explore | Learn | Connect</title>
         </Head>
         <Provider store={store}>
