@@ -1,0 +1,44 @@
+.privacy-page {
+  background: linear-gradient(180deg, #7766C6 0%, #6145A4 31.77%, #4C3482 68.75%, #38265F 100%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 24px 10px 24px;
+
+  .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .bottom-content {
+    .reserved-content {
+      display: flex;
+      margin-top: 10vh;
+      justify-content: flex-end;
+      .text {
+        color: #fff;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 958px) {
+    .content {
+      flex-direction: column;
+      .image-content {
+        justify-content: center;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .content {
+      .desc-content {
+        .title {
+          font-size: 26px;
+        }
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,10 @@
 import React from 'react';
+import {ButtonBase, Typography} from "@mui/material";
+import {useRouter} from "next/router";
+import {FormattedMessage} from "react-intl";
 
 const Home = () => {
+    const router = useRouter()
     return (
         <div className='home-page'>
             <h1 className='title montserrat'>OOrmia - Explore | Learn | Connect</h1>
@@ -31,8 +35,17 @@ const Home = () => {
             </div>
             <div className='bottom-content'>
                 <div className='reserved-content'>
-                    <p className='text'>Copyright ©{new Date().getFullYear()} OOrmia. All rights are reserved</p>
+                    <p className='text'>Copyright ©{new Date().getFullYear()} OOrmia. All rights are reserved |</p>
+                    <ButtonBase onClick={(e) => {
+                        e.preventDefault()
+                        router.push('/privacy')
+                    }} >
+                        <Typography  color={'#818195'}  marginLeft={'5px'} >
+                            <FormattedMessage id={'privacy_policy.title'}/>
+                        </Typography>
+                    </ButtonBase>
                 </div>
+
             </div>
         </div>
     );
