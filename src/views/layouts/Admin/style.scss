@@ -1,0 +1,217 @@
+.adminLayout {
+  display: flex;
+  position: absolute;
+  .sider {
+    height: 100vh;
+    background-color: #46467A;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    height: 60px;
+    background-color: #7766C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    background-color: #7766C6;
+    padding: 0 20px;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    .collapsed-mobile-menu {
+      display: none;
+      .mobile-menu-icon {
+        font-size: 20px;
+      }
+    }
+
+    .account {
+      display: flex;
+      justify-content: space-around;
+      .dropdownFullName {
+        font-family: NOTO-SANS_ARMENIAN, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: white;
+        cursor: pointer;
+        padding-left: 10px;
+      }
+      .dropdownFullName:hover {
+        color: white;
+      }
+    }
+    .trigger {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .content {
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  .ant-menu-item {
+    background-color: #46467A !important;
+  }
+
+  .ant-menu-item-selected {
+    background-color: #7766C6 !important;
+  }
+
+  .ant-menu-item-selected a {
+    color: white !important;
+  }
+  .ant-menu-inline > .ant-menu-item:after {
+    border-right: 3px solid #7766C6;
+  }
+
+  .ant-menu > .ant-menu-item:hover,
+  .ant-menu > .ant-menu-submenu:hover,
+  .ant-menu > .ant-menu-item-active,
+  .ant-menu> .ant-menu-submenu-active,
+  .ant-menu > .ant-menu-item-open,
+  .ant-menu> .ant-menu-submenu-open,
+  .ant-menu > .ant-menu-item-selected,
+  .ant-menu > .ant-menu-submenu-selected,
+  .ant-menu > .ant-menu-submenu-title:hover ,
+   {
+    color: white;
+    border-bottom: white;
+  }
+  .anticon svg:hover {
+    color: white;
+  }
+  .ant-menu-inline.ant-menu-root > .ant-menu-submenu-title>.ant-menu-title-content:hover {
+    color: white !important;
+  }
+
+  .ant-btn:focus, .ant-btn:hover {
+    color: white;
+  }
+  .ant-layout {
+    background: #7766C6;
+    min-height: 100vh;
+  }
+  .anticon svg {
+    color: #7766C6 !important;
+  }
+  .anticon svg:hover {
+    color: #7766C6 !important;
+  }
+}
+.ant-menu-item-active, .ant-menu-item-selected {
+  &:hover {
+    color: white!important;
+  }
+  svg {
+    color: white!important;
+  }
+  background-color: #EFF5E4 !important;
+}
+.background-modal {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  position: absolute;
+  display: none;
+}
+.menu-content {
+  display: none;
+  width: 250px;
+  position: absolute;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
+  z-index: 2005;
+  background: #7766C6;
+  border-radius: 2px;
+  transform-origin: 0 0;
+  top: 70px;
+  left: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #D6D6D6;
+    border-radius: 20px;
+    outline: 1px solid slategrey;
+  }
+
+  .mobile-header-menu {
+    border-right: none;
+
+    li {
+      margin: 0;
+      min-height: 50px;
+
+      div {
+        margin: 0;
+      }
+    }
+
+    li::after {
+      display: none;
+    }
+
+    .item-link {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: normal;
+      font-family: Open-Sans, sans-serif;
+      color: #181818;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .adminLayout {
+    .left-menu {
+      display: none;
+    }
+    .header {
+      .collapsed-left-menu {
+        display: none;
+      }
+      .collapsed-mobile-menu {
+        display: flex;
+      }
+    }
+    .account {
+      .ant-space, .ant-space-horizontal, .ant-space-align-center, .ant-dropdown-trigger{
+        gap: 2px!important;
+      }
+      .dropdownFullName {
+        .name {
+          display: none;
+        }
+      }
+    }
+  }
+  .background-modal {
+    display: flex;
+  }
+  .menu-content {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 781px) {
+  .adminLayout {
+    .content {
+      margin: 5px;
+    }
+  }
+}

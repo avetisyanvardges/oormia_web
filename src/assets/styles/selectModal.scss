@@ -1,0 +1,72 @@
+.select-modal {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card {
+      padding: 5px;
+      width: 225px;
+      border: 1px solid rgba(0, 0, 0, 0.33);
+      border-radius: 20px;
+      margin: 5px 2px;
+      cursor: pointer;
+    }
+    .card-275 {
+      width: 275px;
+    }
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader-h-500 {
+    height: 500px;
+  }
+  .loader-h-200 {
+    height: 200px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      .page-counts {
+        margin-left: 10px;
+      }
+    }
+    .right {
+      width: 260px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+@media only screen and (max-width: 568px) {
+  .select-modal {
+    .cards {
+     .card {
+       width: 95%;
+     }
+    }
+    .footer {
+      .right {
+        width: 150px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .select-modal {
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .right {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+

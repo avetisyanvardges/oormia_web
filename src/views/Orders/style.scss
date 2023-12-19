@@ -1,0 +1,14 @@
+.copy-svg:hover{
+  color: #5BC852;
+}
+
+@media only screen and (max-width: 576px) {
+  .create-and-update-orders {
+    .form {
+      .exchange {
+        width: 31px!important;
+        height: 31px!important;
+      }
+    }
+  }
+}

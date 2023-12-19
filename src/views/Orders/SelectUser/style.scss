@@ -1,0 +1,41 @@
+.select-user-component {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 9px;
+  margin: 3px;
+  .top-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .form {
+    .two-inputs {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .input, input {
+        width: 280px;
+      }
+    }
+    .selected-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        margin-top: 10px;
+      }
+
+      .name {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 481px) {
+  .select-user-component {
+    padding: 5px;
+  }
+}

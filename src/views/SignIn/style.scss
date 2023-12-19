@@ -1,0 +1,76 @@
+.signIn {
+  width: 460px;
+  background-color: white;
+  .title {
+    font-size: 30px;
+    line-height: 35.16px;
+    letter-spacing: 0.05em;
+    color: #253025;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+  .form {
+    width: 100%;
+    .emailFormItem {
+      margin-bottom: 59px;
+    }
+    .signInInput {
+      border-bottom: 1px solid #B2C2B0;
+      padding: 0;
+    }
+    .forgotPasswordInformation {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .forgotPassword {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #566C54;
+      }
+    }
+    .signInButton {
+      margin-top: 46px;
+      width: 460px;
+      height: 60px;
+      border-radius: 12px;
+      background-color: #7766C6;
+      color: white;
+      font-size: 18px;
+      font-weight: 1;
+    }
+  }
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .signIn {
+    .form {
+      .signInInput {
+        width: 100%;
+      }
+      .signInButton {
+        width: 100%;
+      }
+    }
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signIn {
+    .form {
+      .emailFormItem {
+        margin-bottom: 35px;
+      }
+      .signInButton {
+        margin-top: 13px;
+      }
+    }
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

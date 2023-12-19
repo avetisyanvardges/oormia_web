@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.ant-form-item label:after {
+  content: none !important;
+}
+
+.ant-modal > .ant-modal-content {
+  border-radius: 20px;
+}
+.ant-modal > .ant-modal-content > .ant-modal-header {
+  border-radius: 20px 20px 0 0;
+}
+.spin {
+  margin-top: 50px;
+}
+
+@font-face {
+  font-family: "NOTO-SANS_ARMENIAN";
+  src: local("NOTO-SANS_ARMENIAN"),
+  url("assets/fonts/NotoSansArmenian-Regular.ttf");
+  font-style: normal;
+}
+
+a {
+  text-decoration: none!important;
+}
+a:hover {
+  color: #5BC852!important;
+}
+.ant-menu-item-selected, .ant-menu-item-selected a, .ant-menu-item-selected a:hover{
+  color: #7766C6!important;
+}
+
+.ant-table-column-sorter {
+  margin-top: -50px;
+}

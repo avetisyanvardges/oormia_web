@@ -1,0 +1,14 @@
+@import 'antd/dist/antd.css';
+.page-with-table {
+  .table {
+    border-radius: 20px;
+    overflow-x: auto;
+    max-width: 99%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page-with-table {
+    width: 95vw!important;
+  }
+}
